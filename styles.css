@@ -1,2 +1,79 @@
 
-.guides-title{font-family:Manrope,sans-serif;font-size:clamp(42px,5vw,62px);line-height:1.08;letter-spacing:-2px;margin:0}.guides-title em{font-style:normal;color:#849c36}.guides-intro{max-width:720px;color:var(--muted);font-size:15px;line-height:1.8;margin:22px 0 38px}.guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:30px}.guide-card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:24px}.guide-card h3{font-family:Manrope,sans-serif;font-size:20px;line-height:1.3;margin:0 0 12px}.guide-card h3 a{color:var(--ink);text-decoration:none}.guide-card>p:not(.tag){color:var(--muted);font-size:12px;line-height:1.75}.article-wrap{max-width:850px;margin:0 auto;padding:75px 7% 90px}.article-wrap h1,.legal h1{font-family:Manrope,sans-serif;font-size:clamp(38px,5vw,58px);line-height:1.1;letter-spacing:-2px;margin:0 0 20px}.article-intro{font-size:18px;line-height:1.8;color:#5f6c64}.article-meta,.article-note{font-size:11px;line-height:1.7;color:#89948d}.article-body{margin-top:40px}.article-body h2,.legal h2{font-family:Manrope,sans-serif;font-size:22px;margin:30px 0 9px}.article-body p,.legal p{font-size:14px;line-height:1.9;color:#5f6c64}.takeaway{background:#e9eddb;border-radius:16px;padding:22px;margin:34px 0}.takeaway p{margin-bottom:0}.legal{max-width:900px;margin:0 auto;min-height:55vh}.compact .guide-card:nth-child(n+7){display:none}@media(max-width:760px){.guide-grid{grid-template-columns:1fr}.article-wrap{padding:55px 7%}.article-wrap h1{font-size:39px}.guides-title{font-size:42px}}
+.guides-title{font-family:Manrope,sans-serif;font-size:clamp(42px,5vw,62px);line-height:1.08;letter-spacing:-2px;margin:0}.guides-title em{font-style:normal;color:#849c36}.guides-intro{max-width:720px;color:var(--muted);font-size:15px;line-height:1.8;margin:22px 0 38px}.guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:30px}.guide-card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:24px}.guide-card h3{font-family:Manrope,sans-serif;font-size:20px;line-height:1.3;margin:0 0 12px}.guide-card h3 a{color:var(--ink);text-decoration:none}.guide-card>p:not(.tag){color:var(--muted);font-size:12px;line-height:1.75}.article-wrap{max-width:850px;margin:0 auto;padding:75px 7% 90px}.article-wrap h1,.legal h1{font-family:Manrope,sans-serif;font-size:clamp(38px,5vw,58px);line-height:1.1;letter-spacing:-2px;margin:0 0 20px}.article-intro{font-size:18px;line-height:1.8;color:#5f6c64}.article-meta,.article-note{font-size:11px;line-height:1.7;color:#89948d}.article-body{margin-top:40px}.article-body h2,.legal h2{font-family:Manrope,sans-serif;font-size:22px;margin:30px 0 9px}.article-body p,.legal p{font-size:14px;line-height:1.9;color:#5f6c64}.takeaway{background:#e9eddb;border-radius:16px;padding:22px;margin:34px 0}.takeaway p{margin-bottom:0}.legal{max-width:900px;margin:0 auto;min-height:55vh}.compact .guide-card:nth-child(n+7){display:none}@media(max-width:760px){.guide-grid{grid-template-columns:1fr}.article-wrap{padding:55px 7%}.article-wrap h1{font-size:39px}.guides-title{font-size:42px}}/* SMARTPICK PRODUCT DESIGN */
+
+#shop .guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+
+#shop .guide-card {
+  background: #fff;
+  border: 1px solid #e8eae4;
+  border-radius: 20px;
+  padding: 16px;
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+#shop .guide-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+#shop .guide-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: contain;
+  background: #f7f8f4;
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+#shop .guide-card h3 {
+  font-size: 17px;
+  min-height: 45px;
+}
+
+#shop .guide-card .tag {
+  color: #849c36;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+#shop .guide-card .text-link {
+  display: inline-block;
+  background: #849c36;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+#shop .guide-card .text-link:hover {
+  background: #657a28;
+}
+
+@media(max-width: 760px) {
+  #shop .guide-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  #shop .guide-card {
+    padding: 10px;
+  }
+
+  #shop .guide-card img {
+    height: 145px;
+  }
+
+  #shop .guide-card h3 {
+    font-size: 14px;
+  }
+}
