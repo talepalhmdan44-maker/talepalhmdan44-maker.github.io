@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://talepalhmdan44-maker.github.io/sitemap.xml
