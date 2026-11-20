@@ -1,424 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Practical buying guides for useful technology, home essentials and everyday products.">
-  <title>Find your next great pick | SmartPick</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SmartPick helps you discover useful technology, home essentials and smart everyday products.">
+<title>SmartPick | Smart Choices for Everyday Life</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f5f7fb;
+color:#172033;
+line-height:1.6
+}
+header{
+background:#101828;
+color:white;
+padding:22px 5%;
+}
+.header-inner{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:15px
+}
+.logo{font-size:27px;font-weight:bold;color:#61dafb}
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-size:14px
+}
+nav a:hover{color:#61dafb}
+.hero{
+padding:75px 20px;
+text-align:center;
+background:linear-gradient(135deg,#14213d,#2563eb);
+color:white
+}
+.hero h1{font-size:42px;margin-bottom:15px}
+.hero p{max-width:700px;margin:0 auto 25px;color:#e0eaff}
+.button{
+display:inline-block;
+background:#61dafb;
+color:#101828;
+padding:12px 22px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold
+}
+.container{
+max-width:1200px;
+margin:auto;
+padding:40px 20px
+}
+.section-title{
+text-align:center;
+margin-bottom:30px;
+font-size:30px
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px
+}
+.card{
+background:white;
+border-radius:14px;
+padding:25px;
+box-shadow:0 4px 15px rgba(0,0,0,.06);
+transition:.2s
+}
+.card:hover{transform:translateY(-4px)}
+.card h3{margin-bottom:10px;color:#1d4ed8}
+.card p{color:#596579;margin-bottom:15px}
+.card a{
+display:inline-block;
+background:#14213d;
+color:white;
+padding:10px 16px;
+border-radius:7px;
+text-decoration:none
+}
+.disclosure{
+background:#e8f3ff;
+border:1px solid #c5e0ff;
+border-radius:10px;
+padding:18px;
+margin-bottom:30px;
+font-size:14px
+}
+.info-section{
+background:white;
+padding:30px;
+border-radius:12px;
+margin-bottom:25px
+}
+.info-section h2{margin-bottom:15px;color:#1d4ed8}
+.info-section p{margin-bottom:12px}
+footer{
+background:#101828;
+color:white;
+padding:35px 20px;
+text-align:center
+}
+footer a{color:#61dafb;text-decoration:none;margin:0 8px}
+footer p{margin:10px 0}
+@media(max-width:600px){
+.hero h1{font-size:30px}
+.header-inner{justify-content:center}
+nav{text-align:center}
+nav a{display:inline-block;margin:5px}
+}
+</style>
 </head>
+
 <body>
-<div class="topline">SMART FINDS. LESS SEARCHING.</div>
-<header class="site-header">
-  <a class="brand" href="index.html"><span class="brand-mark">S</span> Smart<span>Pick</span></a>
-  <nav><a href="#tech">Tech</a><a href="#home">Home</a><a href="#everyday">Everyday</a><a href="about.html">About</a></nav>
-  <a class="header-cta" href="guides.html">Buying guides ↗</a>
-</header>
-<main>
-  <section class="hero">
-    <div class="hero-copy">
-      <p class="eyebrow">THE SMARTER WAY TO SHOP</p>
-      <h1>Good finds.<br><em>Better choices.</em></h1>
-      <p class="hero-text">Practical buying guides for useful tech, home essentials and everyday upgrades. Know what to look for before you buy.</p>
-      <a class="button button-dark" href="#shop">Explore product picks <span>→</span></a>
-      <p class="small-note">Independent product research. Clear advice. No pretend product tests.</p>
-    </div>
-    <div class="hero-art" aria-label="Smart shopping inspiration">
-      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
-      <div class="floating-card card-a"><span class="mini-icon">⌁</span><small>TECH FINDS</small><strong>Choose with<br>confidence.</strong></div>
-      <div class="floating-card card-b"><span class="mini-icon">✳</span><small>HOME PICKS</small><strong>Useful upgrades.<br>Less guesswork.</strong></div>
-      <div class="hero-sticker">SMART<br>CHOICES</div>
-    </div>
-  </section>
-  <section class="trust-strip">
-    <div><b>Research-led</b><span>Understand the features that matter</span></div>
-    <div><b>Practical</b><span>Advice built around real buying decisions</span></div>
-    <div><b>Transparent</b><span>Clear about links and how the site works</span></div>
-  </section>
-  <section class="section" id="shop">
-    <div class="section-heading">
-      <div><p class="eyebrow">OUR PRODUCT PICKS</p><h2>Discover popular products</h2></div>
-      <p>Browse useful product categories and compare current options at Amazon.</p>
-    </div>
-    <div class="filter-row">
-      <a href="#tech">Tech</a><a href="#home">Home</a><a href="#everyday">Everyday</a><span>30 product categories</span>
-    </div>
-    <div class="product-grid">
-<article class="product-card" id="tech">
-      <a class="product-image" href="https://www.amazon.com/s?k=wireless+bluetooth+earbuds" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=700&q=80" alt="Illustrative tech shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">TECH</p>
-        <h3>Wireless Bluetooth Earbuds</h3>
-        <p class="description">Explore earbuds for music, calls and everyday listening.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=wireless+bluetooth+earbuds" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card" id="home">
-      <a class="product-image" href="https://www.amazon.com/s?k=usb+c+fast+charger" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=700&q=80" alt="Illustrative tech shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">TECH</p>
-        <h3>USB-C Fast Chargers</h3>
-        <p class="description">Compare compact chargers, wattage and charging standards.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=usb+c+fast+charger" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card" id="everyday">
-      <a class="product-image" href="https://www.amazon.com/s?k=portable+power+bank" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=700&q=80" alt="Illustrative tech shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">TECH</p>
-        <h3>Portable Power Banks</h3>
-        <p class="description">Find portable charging for commutes and travel.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=portable+power+bank" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=smart+watches" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=700&q=80" alt="Illustrative tech shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">TECH</p>
-        <h3>Smart Watches</h3>
-        <p class="description">Explore activity tracking, notifications and battery life.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=smart+watches" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=bluetooth+speakers" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=700&q=80" alt="Illustrative tech shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">TECH</p>
-        <h3>Bluetooth Speakers</h3>
-        <p class="description">Compare portable speakers for indoor and outdoor use.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=bluetooth+speakers" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=laptop+stand" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=700&q=80" alt="Illustrative tech shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">TECH</p>
-        <h3>Laptop Stands</h3>
-        <p class="description">Improve screen height and desk ergonomics.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=laptop+stand" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=wireless+keyboard" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=700&q=80" alt="Illustrative tech shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">TECH</p>
-        <h3>Wireless Keyboards</h3>
-        <p class="description">Explore compact and full-size keyboard options.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=wireless+keyboard" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=wireless+computer+mouse" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=700&q=80" alt="Illustrative tech shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">TECH</p>
-        <h3>Computer Mice</h3>
-        <p class="description">Compare wireless and ergonomic computer mice.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=wireless+computer+mouse" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=usb+c+hub" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=700&q=80" alt="Illustrative tech shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">TECH</p>
-        <h3>USB-C Hubs</h3>
-        <p class="description">Add ports and connectivity to compatible laptops.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=usb+c+hub" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=1080p+webcam" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=700&q=80" alt="Illustrative tech shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">TECH</p>
-        <h3>Webcams</h3>
-        <p class="description">Explore webcams for video calls and streaming.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=1080p+webcam" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=air+fryer" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80" alt="Illustrative home shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">HOME</p>
-        <h3>Air Fryers</h3>
-        <p class="description">Compare capacity, controls and countertop footprint.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=air+fryer" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=robot+vacuum" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80" alt="Illustrative home shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">HOME</p>
-        <h3>Robot Vacuums</h3>
-        <p class="description">Explore mapping, floor compatibility and maintenance.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=robot+vacuum" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=electric+kettle" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80" alt="Illustrative home shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">HOME</p>
-        <h3>Electric Kettles</h3>
-        <p class="description">Compare capacity, materials and safety features.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=electric+kettle" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=coffee+maker" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80" alt="Illustrative home shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">HOME</p>
-        <h3>Coffee Makers</h3>
-        <p class="description">Explore coffee machines and brewing styles.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=coffee+maker" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=kitchen+blender" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80" alt="Illustrative home shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">HOME</p>
-        <h3>Kitchen Blenders</h3>
-        <p class="description">Find a blender that fits your everyday kitchen tasks.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=kitchen+blender" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=smart+plug" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80" alt="Illustrative home shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">HOME</p>
-        <h3>Smart Plugs</h3>
-        <p class="description">Check app support, electrical ratings and compatibility.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=smart+plug" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=air+purifier" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80" alt="Illustrative home shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">HOME</p>
-        <h3>Air Purifiers</h3>
-        <p class="description">Compare room coverage, filters and replacement costs.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=air+purifier" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=led+desk+lamp" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80" alt="Illustrative home shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">HOME</p>
-        <h3>LED Desk Lamps</h3>
-        <p class="description">Explore adjustable lighting for workspaces.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=led+desk+lamp" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=food+storage+containers" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80" alt="Illustrative home shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">HOME</p>
-        <h3>Food Storage Containers</h3>
-        <p class="description">Organize pantry and fridge essentials.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=food+storage+containers" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=electric+toothbrush" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80" alt="Illustrative home shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">HOME</p>
-        <h3>Electric Toothbrushes</h3>
-        <p class="description">Compare brush heads, charging and replacement costs.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=electric+toothbrush" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=cable+organizer" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=80" alt="Illustrative everyday shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">EVERYDAY</p>
-        <h3>Cable Organizers</h3>
-        <p class="description">Keep charging and desk cables tidy.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=cable+organizer" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=travel+backpack" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=80" alt="Illustrative everyday shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">EVERYDAY</p>
-        <h3>Travel Backpacks</h3>
-        <p class="description">Explore everyday carry and travel-friendly layouts.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=travel+backpack" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=insulated+water+bottle" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=80" alt="Illustrative everyday shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">EVERYDAY</p>
-        <h3>Insulated Water Bottles</h3>
-        <p class="description">Compare bottle capacity, lids and insulation.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=insulated+water+bottle" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=desk+organizer" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=80" alt="Illustrative everyday shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">EVERYDAY</p>
-        <h3>Desk Organizers</h3>
-        <p class="description">Make work surfaces easier to keep organized.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=desk+organizer" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=phone+stand" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=80" alt="Illustrative everyday shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">EVERYDAY</p>
-        <h3>Phone Stands</h3>
-        <p class="description">Find practical stands for desks and video calls.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=phone+stand" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=travel+organizer" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=80" alt="Illustrative everyday shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">EVERYDAY</p>
-        <h3>Travel Organizers</h3>
-        <p class="description">Organize luggage, cables and small travel essentials.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=travel+organizer" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=led+strip+lights" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=80" alt="Illustrative everyday shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">EVERYDAY</p>
-        <h3>LED Strip Lights</h3>
-        <p class="description">Explore ambient lighting for rooms and workspaces.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=led+strip+lights" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=reusable+shopping+bags" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=80" alt="Illustrative everyday shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">EVERYDAY</p>
-        <h3>Reusable Shopping Bags</h3>
-        <p class="description">Compare foldable and reusable shopping bags.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=reusable+shopping+bags" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=car+phone+mount" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=80" alt="Illustrative everyday shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">EVERYDAY</p>
-        <h3>Car Phone Mounts</h3>
-        <p class="description">Explore dashboard and vent-mounted phone holders.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=car+phone+mount" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-<article class="product-card">
-      <a class="product-image" href="https://www.amazon.com/s?k=wireless+charging+pad" target="_blank" rel="noopener noreferrer">
-        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=80" alt="Illustrative everyday shopping inspiration" loading="lazy">
-        <span class="image-label">ILLUSTRATIVE IMAGE</span>
-      </a>
-      <div class="product-info">
-        <p class="tag">EVERYDAY</p>
-        <h3>Wireless Charging Pads</h3>
-        <p class="description">Check device compatibility and charging speed.</p>
-        <a class="product-button" href="https://www.amazon.com/s?k=wireless+charging+pad" target="_blank" rel="noopener noreferrer sponsored">Explore on Amazon ↗</a>
-      </div>
-    </article>
-    </div>
-  </section>
-  <section class="about-band">
-    <div><p class="eyebrow">WHY SMARTPICK?</p><h2>Less noise.<br><em>More useful insight.</em></h2></div>
-    <p>SmartPick is an independent product-discovery project. We explain specifications, compatibility, maintenance and trade-offs so readers can make informed choices. Unless stated otherwise, guides are research-based and are not hands-on product tests.</p>
-  </section>
-</main>
-<footer>
-  <a class="brand" href="index.html"><span class="brand-mark">S</span> Smart<span>Pick</span></a>
-  <p>© 2026 SmartPick. All rights reserved.</p>
-  <div class="footer-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="disclosure.html">Affiliate disclosure</a><a href="contact.html">Contact</a></div>
-  <p class="disclosure">SmartPick is independent. These are ordinary Amazon search links, not affiliate links. Product images are illustrative and are not representations of the exact items shown on Amazon.</p>
-</footer>
-</body>
-</html>
+
+<header>
+<div class="header-inner">
+<div class="logo">SmartPick</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a
