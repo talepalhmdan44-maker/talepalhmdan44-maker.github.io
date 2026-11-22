@@ -1,5 +1,9 @@
-SmartPick website update package
-Upload/replace the files in the existing GitHub repository root.
-Amazon Associates tracking ID configured: Smartpickgu03-20
-Files: index.html, styles.css, products.js, app.js, about.html, disclosure.html, privacy.html, contact.html, robots.txt, sitemap.xml
-Product links use Amazon search pages with the tracking ID, not fixed individual product listings.
+SmartPick FINAL PUBLISH PACKAGE
+
+Upload ALL files in this package to the ROOT of the existing GitHub Pages repository.
+Replace existing files when prompted. Do not upload this ZIP itself.
+Do not change repository settings or branch settings.
+
+Website: https://talepalhmdan44-maker.github.io/
+Amazon Associates tracking tag in article links: Smartpickgu03-20
+This package contains 10 original buying-guide pages plus homepage and supporting pages.
